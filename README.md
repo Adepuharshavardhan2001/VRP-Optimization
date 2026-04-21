@@ -1,8 +1,8 @@
-Hyderabad Route Optimizer (VRP)
+## Hyderabad Route Optimizer (VRP)
 
 A Python-based logistics tool that uses Google OR-Tools to calculate the most efficient delivery routes for multiple vehicles starting from a central depot in Hitech City, Hyderabad.
 
-Features
+# Features
 
 Multi-Vehicle Routing: Optimizes paths for a fleet of vehicles (currently configured for 2).
 
@@ -12,7 +12,7 @@ Interactive Visualization: Renders optimized routes on an interactive map using 
 
 Constraint Solving: Minimizes total travel distance using the PATH_CHEAPEST_ARC strategy.
 
-Tech Stack
+# Tech Stack
 
 Python 3.11
 
@@ -24,7 +24,7 @@ Folium: Leaflet.js integration for geographical mapping.
 
 SciPy: Efficient distance matrix computation.
 
-Getting Started
+# Getting Started
 
 1. Prerequisites
 
@@ -47,7 +47,16 @@ Simply run the notebook or script to generate the route output:
 Vehicle 1 Route:
 Depot → Gachibowli → Kondapur → Madhapur → Ameerpet → Begumpet → Secunderabad → Jubilee Hills → Charminar → Banjara Hills → Depot
 
+# visulisation
+
+Greedy_VRP 
+
 <img width="956" height="491" alt="Screenshot 2026-04-21 061816" src="https://github.com/user-attachments/assets/2856571a-c377-4778-8dd2-aeefc32b9162" />
+
+# OR Tools
+
+<img width="958" height="470" alt="or tools" src="https://github.com/user-attachments/assets/64e70544-6f88-4d4a-93a0-1ecf6ca71287" />
+
 
 
 Vehicle 1 Route:
