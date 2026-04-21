@@ -47,9 +47,9 @@ Simply run the notebook or script to generate the route output:
 Vehicle 1 Route:
 Depot → Gachibowli → Kondapur → Madhapur → Ameerpet → Begumpet → Secunderabad → Jubilee Hills → Charminar → Banjara Hills → Depot
 
-# visulisation
+# visualisation
 
-Greedy_VRP 
+# Greedy_VRP 
 
 <img width="956" height="491" alt="Screenshot 2026-04-21 061816" src="https://github.com/user-attachments/assets/2856571a-c377-4778-8dd2-aeefc32b9162" />
 
