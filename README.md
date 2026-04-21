@@ -1,54 +1,54 @@
-# Vehicle Route Optimization (VRP)
+Hyderabad Route Optimizer (VRP)
 
-**Optimizing delivery/pickup routes for a fleet of vehicles in Hyderabad** — Real-world Operations Research project for Yulu fleet operations.
+A Python-based logistics tool that uses Google OR-Tools to calculate the most efficient delivery routes for multiple vehicles starting from a central depot in Hitech City, Hyderabad.
 
+Features
 
+Multi-Vehicle Routing: Optimizes paths for a fleet of vehicles (currently configured for 2).
 
----
+Distance Matrix Calculation: Uses Euclidean distance between GPS coordinates (Lat/Lon).
 
-##  Problem Statement
-Given a set of pickup and drop locations, find the **most optimal routes** for multiple vehicles while respecting **vehicle capacity**.  
-This project mirrors Yulu’s real fleet rebalancing, maintenance, and servicing operations.
+Interactive Visualization: Renders optimized routes on an interactive map using folium.
 
----
+Constraint Solving: Minimizes total travel distance using the PATH_CHEAPEST_ARC strategy.
 
-##  Key Features
+Tech Stack
 
-- Solved using **Google OR-Tools** (Optimal CVRP)
-- Compared with **Greedy Heuristic** baseline
-- Real geographic distances using **Haversine formula**
-- Interactive maps using **Folium**
-- Clear performance comparison
+Python 3.11
 
----
+OR-Tools: Google's optimization software for combinatorial optimization.
 
-##  Tech Stack
+Pandas: Data manipulation and location management.
 
-- **OR-Tools** (Google)
-- **Folium** + **OpenStreetMap**
-- **Python, Pandas, NumPy**
-- **Haversine Distance**
+Folium: Leaflet.js integration for geographical mapping.
 
----
+SciPy: Efficient distance matrix computation.
 
-##  Project Structure
+Getting Started
 
-```bash
-yulu-vrp-optimization/
-├── vrp_solver.py                    # Main code
-├── locations.csv                    # Generated locations
-├── greedy_routes.html               # Interactive map
-├── or_tools_optimal_routes.html     # Best solution map
-├── README.md
-└── requirements.txt
+1. Prerequisites
 
-Results
+Ensure you have Python installed, then install the necessary libraries:
 
-<img width="437" height="107" alt="image" src="https://github.com/user-attachments/assets/9b199767-9b59-40ed-81ef-c24dc534a53f" />
+Bash
 
-OR-Tools Optimal Routes (Best Solution)
+pip install pandas scipy ortools folium
 
-<img width="957" height="477" alt="image" src="https://github.com/user-attachments/assets/6177a149-c956-40aa-98e3-b838bb709aeb" />
+2. Running the Optimizer
 
+The script defines 10 key locations in Hyderabad, including:
+
+Depot: Hitech City
+
+Delivery Points: Gachibowli, Madhapur, Jubilee Hills, Charminar, etc.
+
+Simply run the notebook or script to generate the route output:
+
+Vehicle 1 Route:
+Depot → Gachibowli → Kondapur → Madhapur → Ameerpet → Begumpet → Secunderabad → Jubilee Hills → Charminar → Banjara Hills → Depot
+
+<img width="956" height="491" alt="Screenshot 2026-04-21 061816" src="https://github.com/user-attachments/assets/2856571a-c377-4778-8dd2-aeefc32b9162" />
 
 
+Vehicle 1 Route:
+Depot → Gachibowli → Kondapur → Madhapur → Ameerpet → Begumpet → Secunderabad → Jubilee Hills → Charmi
