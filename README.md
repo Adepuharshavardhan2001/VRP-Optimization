@@ -25,6 +25,7 @@ Folium: Leaflet.js integration for geographical mapping.
 SciPy: Efficient distance matrix computation.
 
 # Getting Started
+
 1. Prerequisites
 
 Ensure you have Python installed, then install the necessary libraries:
